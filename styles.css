@@ -1,3 +1,8 @@
+body {
+  background-color: #222;
+  color: #fff;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -23,9 +28,9 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  background-color: #f2f2f2;
+  background-color: #333;
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 .links-list li a img {
@@ -39,5 +44,5 @@
 }
 
 .links-list li a:hover {
-  background-color: #e2e2e2;
+  background-color: #6f42c1;
 }
