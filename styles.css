@@ -3,8 +3,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -18,51 +16,39 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.logo {
   margin-bottom: 20px;
 }
 
 .logo img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .header-text h1 {
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .header-text h2 {
-  font-size: 16px;
-}
-
-.share-button {
-  position: relative;
-}
-
-.share-icon {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-image: url("share-icon.png");
-  background-size: cover;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .links-list {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr; /* Display a single column on mobile */
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 
 .links-list li {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  overflow: hidden;
 }
 
 .links-list li a {
@@ -73,6 +59,7 @@ header {
   background-color: #333;
   text-decoration: none;
   color: #fff;
+  border-radius: 20px;
 }
 
 .links-list li a span {
@@ -83,40 +70,51 @@ header {
   background-color: #6f42c1;
 }
 
-.share-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 200px;
-  background-color: #333;
-  border-radius: 5px;
-  padding: 10px;
-  display: none;
+.share-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.share-popup.show {
-  display: block;
+.share-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.share-popup {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
 }
 
 .share-popup ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.share-popup ul li {
-  margin-bottom: 5px;
+.share-popup li {
+  margin-bottom: 10px;
 }
 
-.share-popup ul li a {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #6f42c1;
-  color: #fff;
+.share-popup a {
   text-decoration: none;
-  border-radius: 3px;
+  color: #000;
 }
 
-.share-popup ul li a:hover {
-  background-color: #555;
+.share-button:hover .share-popup {
+  display: block;
 }
