@@ -24,11 +24,11 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20px; /* Increased margin from h2 to the top of the list */
 }
 
@@ -59,11 +59,11 @@ h2 {
   background-color: #333;
   text-decoration: none;
   color: #fff;
-  line-height: 1.5; /* Adjusted line height for taller boxes */
+  line-height: 1.25; /* Adjusted line height for taller boxes */
 }
 
 .links-list li a span {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .links-list li a:hover {
