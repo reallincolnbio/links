@@ -9,7 +9,7 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 50px auto; /* Increased margin from the top of the page */
   padding: 20px;
   text-align: center;
 }
@@ -29,6 +29,7 @@ h1 {
 
 h2 {
   font-size: 18px;
+  margin-top: 20px; /* Increased margin from h2 to the top of the list */
 }
 
 .links-list {
