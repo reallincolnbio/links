@@ -15,23 +15,32 @@ body {
 }
 
 .logo {
-  /* Your existing logo styles */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
 
-  /* Add a gradient border */
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border: 2px solid;
   border-image: linear-gradient(to right, #FF00FF, #00FFFF);
   border-image-slice: 1;
-
-  /* Make the logo circular */
   border-radius: 50%;
-  overflow: hidden;
 }
 
 .logo img {
-  width: 75px;
-  height: 75px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
+
 
 h1 {
   font-size: 24px;
