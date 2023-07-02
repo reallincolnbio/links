@@ -3,9 +3,24 @@ document.addEventListener("DOMContentLoaded", function() {
   var sharePopup = document.querySelector(".share-popup");
   var copyUrlButton = document.querySelector("#copy-url-button");
   var urlInput = document.querySelector("#url-input");
+  var shareTimer;
 
   shareButton.addEventListener("click", function() {
     sharePopup.style.display = "block";
+  });
+
+  shareButton.addEventListener("mouseleave", function() {
+    shareTimer = setTimeout(function() {
+      sharePopup.style.display = "none";
+    }, 500);
+  });
+
+  sharePopup.addEventListener("mouseenter", function() {
+    clearTimeout(shareTimer);
+  });
+
+  sharePopup.addEventListener("mouseleave", function() {
+    sharePopup.style.display = "none";
   });
 
   document.addEventListener("click", function(event) {
