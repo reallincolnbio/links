@@ -18,6 +18,7 @@ body {
   width: 75px;
   height: 75px;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
