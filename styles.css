@@ -47,6 +47,8 @@ h2 {
   border: 2px solid #000; /* Black border */
   border-bottom-width: 4px; /* Heavier weight on bottom */
   border-right-width: 4px; /* Heavier weight on right */
+    font-size: 24px; /* Increased font size */
+
 }
 
 .links-list li a {
@@ -57,7 +59,6 @@ h2 {
   background-color: #333;
   text-decoration: none;
   color: #fff;
-  font-size: 24px; /* Increased font size */
   line-height: 1.5; /* Adjusted line height for taller boxes */
 }
 
