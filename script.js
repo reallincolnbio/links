@@ -1,33 +1,24 @@
-// JavaScript code
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   var shareButton = document.querySelector(".share-button");
   var sharePopup = document.querySelector(".share-popup");
+  var copyUrlButton = document.querySelector("#copy-url-button");
+  var urlInput = document.querySelector("#url-input");
 
-  // Delay before closing the share popup
-  var closeDelay = 500; // Delay in milliseconds (adjust as needed)
-
-  // Open the share popup when clicking on the share button
-  shareButton.addEventListener("click", function () {
+  shareButton.addEventListener("click", function() {
     sharePopup.style.display = "block";
   });
 
-  // Close the share popup when clicking outside of it
-  document.addEventListener("click", function (event) {
-    if (!shareButton.contains(event.target) && !sharePopup.contains(event.target)) {
+  document.addEventListener("click", function(event) {
+    var target = event.target;
+    if (!target.closest(".share-popup") && !target.closest(".share-button")) {
       sharePopup.style.display = "none";
     }
   });
 
-  // Delay closing the share popup after moving the mouse out
-  var closeTimeout;
-  shareButton.addEventListener("mouseout", function () {
-    closeTimeout = setTimeout(function () {
-      sharePopup.style.display = "none";
-    }, closeDelay);
-  });
-
-  // Clear the close timeout when moving the mouse back in
-  shareButton.addEventListener("mouseover", function () {
-    clearTimeout(closeTimeout);
+  copyUrlButton.addEventListener("click", function() {
+    urlInput.select();
+    urlInput.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("URL copied to clipboard!");
   });
 });
