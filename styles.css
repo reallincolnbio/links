@@ -30,6 +30,7 @@ h1 {
 h2 {
   font-size: 16px;
   margin-top: 20px; /* Increased margin from h2 to the top of the list */
+margin-bottom: 20px;
 }
 
 .links-list {
