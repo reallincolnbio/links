@@ -45,8 +45,8 @@ h2 {
   border-radius: 50px;
   overflow: hidden;
   border: 2px solid #000; /* Black border */
-  border-bottom-width: 6px; /* Heavier weight on bottom */
-  border-right-width: 6px; /* Heavier weight on right */
+  border-bottom-width: 8px; /* Heavier weight on bottom */
+  border-right-width: 8px; /* Heavier weight on right */
 
 }
 
@@ -62,7 +62,7 @@ h2 {
 }
 
 .links-list li a span {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .links-list li a:hover {
