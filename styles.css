@@ -73,58 +73,59 @@ h2 {
   background-color: #6f42c1;
 }
 
-    .share-container {
-      position: relative;
-    }
+.share-container {
+  position: relative;
+}
 
-    .share-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: #fff;
-      cursor: pointer;
-    }
+.share-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
 
-    .share-icon {
-      /* Set the size of the share icon */
-      width: 24px;
-      height: 24px;
-      position: relative;
-    }
+.share-icon {
+  /* Set the size of the share icon */
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
 
-    .share-icon img {
-      /* Adjust the positioning and size of the icon image */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
-    }
+.share-icon img {
+  /* Adjust the positioning and size of the icon image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
 
-    .share-popup {
-      position: absolute;
-      top: 50px;
-      right: 10px;
-      width: 200px;
-      background-color: #fff;
-      border-radius: 5px;
-      padding: 10px;
-      display: none;
-      z-index: 9999;
-    }
+.share-popup {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  z-index: 9999;
+}
 
-    .share-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+.share-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-    .share-links li {
-      margin
+.share-links li {
+  margin-bottom: 5px;
+}
 
 .copy-url-container {
   display: flex;
