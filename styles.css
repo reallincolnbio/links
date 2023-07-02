@@ -19,6 +19,9 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #FF00FF, #00FFFF);
+  border-image-slice: 1;
 }
 
 .logo img {
