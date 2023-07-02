@@ -15,13 +15,16 @@ body {
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  /* Your existing logo styles */
+
+  /* Add a gradient border */
   border: 2px solid;
   border-image: linear-gradient(to right, #FF00FF, #00FFFF);
   border-image-slice: 1;
+
+  /* Make the logo circular */
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .logo img {
