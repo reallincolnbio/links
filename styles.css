@@ -1,5 +1,5 @@
 body {
-  background-color: #222;
+  background: linear-gradient(to bottom, #6f42c1, #222); /* Gradient background from purple to dark purple */
   color: #fff;
 }
 
@@ -8,6 +8,40 @@ body {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 80px; /* Adjust the width of the logo as needed */
+  height: 80px; /* Adjust the height of the logo as needed */
+}
+
+.header-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.header-text h2 {
+  font-size: 16px;
+}
+
+.share-button {
+  position: relative;
+}
+
+.share-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("share-icon.png"); /* Replace "share-icon.png" with your share button icon */
+  background-size: cover;
 }
 
 .links-list {
@@ -21,6 +55,8 @@ body {
 .links-list li {
   display: flex;
   flex-direction: column;
+  border-radius: 20px; /* Rounded corners */
+  overflow: hidden; /* Ensure rounded corners are applied */
 }
 
 .links-list li a {
@@ -31,12 +67,6 @@ body {
   background-color: #333;
   text-decoration: none;
   color: #fff;
-}
-
-.links-list li a img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
 }
 
 .links-list li a span {
