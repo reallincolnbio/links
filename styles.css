@@ -15,12 +15,12 @@ body {
 }
 
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
 }
 
 h1 {
@@ -36,7 +36,7 @@ h2 {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 30px; /* Increased vertical spacing */
+  grid-gap: 25px; /* Increased vertical spacing */
 }
 
 .links-list li {
