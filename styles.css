@@ -47,7 +47,6 @@ h2 {
   border: 2px solid #000; /* Black border */
   border-bottom-width: 6px; /* Heavier weight on bottom */
   border-right-width: 6px; /* Heavier weight on right */
-    font-size: 24px; /* Increased font size */
 
 }
 
@@ -63,7 +62,7 @@ h2 {
 }
 
 .links-list li a span {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .links-list li a:hover {
