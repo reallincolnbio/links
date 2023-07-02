@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lincoln Bio's Links</title>
+  <title>Linktree Example</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Lincoln Bio's Links">
-  <meta property="og:description" content="Explore Lincoln Bio's various social media accounts and website.">
+  <meta property="og:title" content="Linktree Example">
+  <meta property="og:description" content="Explore various social media accounts and website.">
   <meta property="og:image" content="thumbnail.png">
-  <meta property="og:url" content="https://reallincoln.bio">
+  <meta property="og:url" content="https://example.com">
 </head>
 <body>
   <div class="container">
-    <h1>Lincoln Bio's Links</h1>
-    <h2>@reallincolnbio</h2>
-    <h3>CIA Psy-op internet personality</h3>
-
-    <div class="share-container">
-      <div class="share-button">
-        <div class="share-icon"></div>
-      </div>
-      <div class="share-popup">
-        <ul class="share-links">
-          <li><a href="#">Share this Linktree</a></li>
-          <li><a href="#">Share on Facebook</a></li>
-          <li><a href="#">Share on LinkedIn</a></li>
-          <li><a href="#">Share on Twitter</a></li>
-          <li><a href="#">Share via WhatsApp</a></li>
-          <li><a href="#">Share via Messenger</a></li>
-          <li><a href="#">Share via Email</a></li>
-        </ul>
-        <div class="copy-url-container">
-          <input type="text" id="url-input" value="https://reallincoln.bio" readonly>
-          <button id="copy-url-button">Copy URL</button>
-        </div>
-      </div>
+    <div class="logo">
+      <img src="lblogo.png" alt="Logo">
     </div>
-
+    <h1>@reallincolnbio</h1>
+    <h2>CIA Psy-op internet personality</h2>
+    <div class="share-button">
+      <div class="share-icon"></div>
+    </div>
     <ul class="links-list">
       <li>
         <a href="http://reallincoln.bio">
@@ -67,7 +50,28 @@
           <span>reallincolnbio on Nextdoor</span>
         </a>
       </li>
+      <!-- Add more social media links here -->
     </ul>
+  </div>
+
+  <div class="share-popup">
+    <ul class="share-links">
+      <li><a href="#">Share this Linktree</a></li>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.com">Share on Facebook</a></li>
+      <li><a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com">Share on LinkedIn</a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com">Share on Twitter</a></li>
+      <li><a href="whatsapp://send?text=https%3A%2F%2Fexample.com">Share via WhatsApp</a></li>
+      <li><a href="fb-messenger://share/?link=https%3A%2F%2Fexample.com">Share via Messenger</a></li>
+      <li><a href="mailto:?subject=Check%20out%20this%20website&amp;body=https%3A%2F%2Fexample.com">Share via Email</a></li>
+    </ul>
+    <div class="copy-url">
+      <input type="text" id="url-input" value="https://example.com">
+      <button id="copy-url-button">Copy URL</button>
+    </div>
+    <div class="share-mobile">
+      <div class="share-mobile-icon"></div>
+      <p>Share on iPhone or Android</p>
+    </div>
   </div>
 
   <script src="script.js"></script>
