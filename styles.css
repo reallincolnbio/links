@@ -1,6 +1,10 @@
 body {
-  background: linear-gradient(to bottom, #6f42c1, #222); /* Gradient background from purple to dark purple */
+  background: linear-gradient(to bottom, #6f42c1, #222);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -12,14 +16,16 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 .logo img {
-  width: 80px; /* Adjust the width of the logo as needed */
-  height: 80px; /* Adjust the height of the logo as needed */
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
 }
 
 .header-text h1 {
@@ -40,7 +46,7 @@ header {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-image: url("share-icon.png"); /* Replace "share-icon.png" with your share button icon */
+  background-image: url("share-icon.png");
   background-size: cover;
 }
 
@@ -55,8 +61,8 @@ header {
 .links-list li {
   display: flex;
   flex-direction: column;
-  border-radius: 20px; /* Rounded corners */
-  overflow: hidden; /* Ensure rounded corners are applied */
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .links-list li a {
@@ -75,4 +81,42 @@ header {
 
 .links-list li a:hover {
   background-color: #6f42c1;
+}
+
+.share-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 200px;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+.share-popup.show {
+  display: block;
+}
+
+.share-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.share-popup ul li {
+  margin-bottom: 5px;
+}
+
+.share-popup ul li a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #6f42c1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.share-popup ul li a:hover {
+  background-color: #555;
 }
