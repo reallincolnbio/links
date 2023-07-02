@@ -14,7 +14,7 @@ body {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  grid-template-columns: 1fr; /* Display a single column on mobile */
   grid-gap: 20px;
 }
 
