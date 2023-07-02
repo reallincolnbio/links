@@ -36,7 +36,7 @@ h2 {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px; /* Increased vertical spacing */
 }
 
 .links-list li {
@@ -44,6 +44,9 @@ h2 {
   flex-direction: column;
   border-radius: 50px;
   overflow: hidden;
+  border: 2px solid #000; /* Black border */
+  border-bottom-width: 4px; /* Heavier weight on bottom */
+  border-right-width: 4px; /* Heavier weight on right */
 }
 
 .links-list li a {
@@ -54,6 +57,7 @@ h2 {
   background-color: #333;
   text-decoration: none;
   color: #fff;
+  font-size: 16px; /* Increased font size */
 }
 
 .links-list li a span {
